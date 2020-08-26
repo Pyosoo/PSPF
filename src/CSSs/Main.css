@@ -14,21 +14,8 @@
 }
 
 .Logo{
-    position: fixed;
-    top: 0;
-    right: 20px;
-    width: 150px;
-    height: 150px;
-    background-image: url('../Images/Mylogo.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-.Logo:hover{
-    cursor: pointer;
-    position: fixed;
-    top: 0;
-    right: 20px;
+    display: block;
+    margin-left: auto;
     width: 150px;
     height: 150px;
     background-image: url('../Images/Mylogo.png');
@@ -40,6 +27,7 @@
 .Main_Container{
     height: 3000px;
     color: white;
+    margin-top: -150px;
 }
 
 .Main_text{
@@ -379,8 +367,11 @@ h4{
     width: fit-content;
     margin-left: auto;
     margin-right: auto;
+    font-size: 40px;
+    color: wheat;
 }
 .Main_project {
+    background-color: #f3f1ed;
     color: white;
     font-family: 'Londrina Solid', cursive;
     z-index: 2;
@@ -439,9 +430,9 @@ h4{
     display: none;
     width: 100%;
     height: 80px;
-    background-color: beige;
-    border-radius: 0 0 20px 20px;
-    color: black;
+    background-color: rgb(201, 196, 196);
+    border-radius: 20px 20px 20px 20px;
+    color: white;
     font-family: BMJ;
 }
 .desc p:nth-child(1){
