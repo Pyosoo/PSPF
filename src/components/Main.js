@@ -20,13 +20,13 @@ const useStyles = makeStyles((theme) => ({
     },
     paper: {
         display: 'flex',
-        backgroundColor: 'rgb(65, 63, 63)',
+        backgroundColor: 'rgb(179, 178, 178)',
         borderRadius: '20px 20px 20px 20px',
         color: 'white',
         boxShadow: theme.shadows[5],
         padding: theme.spacing(2, 4, 3),
         width: '900px',
-        height: '500px',
+        height: '450px',
         outline: '0px'
     },
 }));
@@ -169,17 +169,21 @@ function Main() {
     }
     return (
         <div className="Main_Total_Container">
-            <div className="rain"></div>
-            <div className="rain2"></div>
-            <div className="rain3"></div>
-            <div className="rain4"></div>
-            <div className="rain5"></div>
+            <div className="rain_container">
+                <div className="rain1 rain"></div>
+                <div className="rain2 rain"></div>
+                <div className="rain3 rain"></div>
+                <div className="rain4 rain"></div>
+                <div className="rain5 rain"></div>
+            </div>
+           
             <div id="TOP" ></div>
             <div className="Logo" onClick={GoTop}></div>
             
             <div className="MenuIcon"></div>
+
+
             <div className="Main_Container">
-            
                 <div className="Main_text">
                     <p className="text_box text1">{name}</p>
                     <p className="text_box">
@@ -343,7 +347,7 @@ function Main() {
                         <button className="ImgControlBtn rightBtn" onClick={plusIndex}>▷</button>
 
                         <div className="Modal_textContainer">
-                            <p>프로젝트명 : 반응형 구구단 학습 웹앱</p>
+                            <h2> 반응형 구구단 학습 웹앱</h2>
                             <p>팀원 수 : 2명(기획디자인, 프론트엔드)</p>
                             <p>나의 역할 : 프론트엔드 전체</p>
                             <p>설명 : 유아 구구단 학습을 위한 반응형 웹앱 사이트로 모바일 및 타블렛, PC버전으로 각각 이용이 가능합니다.
@@ -381,7 +385,7 @@ function Main() {
                         <button className="ImgControlBtn rightBtn" onClick={plusIndex2}>▷</button>
 
                         <div className="Modal_textContainer">
-                            <p>프로젝트명 : 농구기록지 App</p>
+                            <h2>농구기록지 App</h2>
                             <p>나의 역할 : 개인프로젝트</p>
                             <p>사용 기술 : Java, AndroidStudio, Firebase</p>
                             <p>설명 : 농구 기록지의 불편함을 해결하기 위해 만들어본 APP으로, 농구 기록지 작성, 기록지 검색, 기록별 랭킹 검색 기능이 있어
@@ -419,7 +423,7 @@ function Main() {
                         <button className="ImgControlBtn rightBtn" onClick={plusIndex3}>▷</button>
 
                         <div className="Modal_textContainer">
-                            <p>프로젝트명 : 컴투스 3x3프리미어 리그 웹사이트</p>
+                            <h2>컴투스 3x3프리미어 리그 웹사이트</h2>
                             <p>나의 역할 : 개인프로젝트</p>
                             <p>사용 기술 : Javascript, HTML, CSS, React.js</p>
                             <p>설명 : 컴투스에서 주최한 3x3프리미어리그를 재미있게 보고 이 대회만을 위한 사이트를 찾던 중 발견하지 못하여

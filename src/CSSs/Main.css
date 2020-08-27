@@ -16,6 +16,7 @@
 .Logo{
     display: block;
     margin-left: auto;
+    margin-right: 20px;
     width: 150px;
     height: 150px;
     background-image: url('../Images/Mylogo.png');
@@ -122,8 +123,8 @@ h4{
 
 .button2 {
 	display: inline-block;
-	width: 300px;
-	height: 54px;
+	width: 200px;
+    height: 54px;
 	text-align: center;
 	text-decoration: none;
 	line-height: 54px;
@@ -351,7 +352,7 @@ h4{
 
 
 
-/* ============================================= project 라인 ============== */
+/* =================================================== project 라인 ============== */
 
 @keyframes ani1 {
     from {
@@ -368,7 +369,7 @@ h4{
     margin-left: auto;
     margin-right: auto;
     font-size: 40px;
-    color: wheat;
+    color: rgb(107, 106, 104);
 }
 .Main_project {
     background-color: #f3f1ed;
@@ -418,7 +419,8 @@ h4{
     margin-right: auto;
     margin-bottom: 150px;
     font-family: 'Roboto Mono', monospace;
-    z-index: 7;
+    position: sticky;
+    z-index: 2;
     border-radius: 20px 20px 20px 20px;
 }
 .pjimg{
@@ -428,8 +430,10 @@ h4{
 }
 .desc{
     display: none;
-    width: 100%;
+    width: 50%;
     height: 80px;
+    margin-left: auto;
+    margin-right: auto;
     background-color: rgb(201, 196, 196);
     border-radius: 20px 20px 20px 20px;
     color: white;
@@ -508,24 +512,24 @@ h4{
 }
 .leftBtn{
     color: white;
-    font-size: 17px;
+    font-size: 20px;
     margin-top: 110px;
 }
 .rightBtn{
     color: white;
-    font-size: 17px;
+    font-size: 20px;
     margin-top: 110px;
 }
 .leftBtn:hover{
     cursor: pointer;
     color: white;
-    font-size: 17px;
+    font-size: 20px;
     margin-top: 110px;
 }
 .rightBtn:hover{
     cursor: pointer;
     color: white;
-    font-size: 17px;
+    font-size: 20px;
     margin-top: 110px;
 }
 
@@ -598,7 +602,11 @@ h4{
         opacity: 0;
     }
 }
-.rain {
+.rain_container{
+    width: 100%;
+    z-index: 1;
+}
+.rain1 {
     position: absolute;
     width: 250px;
     height: 130px;
@@ -606,7 +614,6 @@ h4{
     background-size: contain;
     background-repeat: no-repeat;
     animation: goingDown 3s linear infinite;
-    z-index: 0;
 }
 .rain2 {
     position: absolute;
@@ -616,7 +623,6 @@ h4{
     background-size: contain;
     background-repeat: no-repeat;
     animation: goingDown2 5s linear infinite;
-    z-index: 0;
 }
 .rain3 {
     position: absolute;
@@ -626,7 +632,6 @@ h4{
     background-size: contain;
     background-repeat: no-repeat;
     animation: goingDown3 7s linear infinite;
-    z-index: 0;
 }
 .rain4 {
     position: absolute;
@@ -636,7 +641,6 @@ h4{
     background-size: contain;
     background-repeat: no-repeat;
     animation: goingDown4 7s linear infinite;
-    z-index: 0;
 }
 .rain5 {
     position: absolute;
@@ -646,7 +650,6 @@ h4{
     background-size: contain;
     background-repeat: no-repeat;
     animation: goingDown5 4s linear infinite;
-    z-index: 0;
 }
 
 
@@ -662,6 +665,5 @@ h4{
     margin-right: 10px;
 }
 .btn2{
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 50px;
 }
