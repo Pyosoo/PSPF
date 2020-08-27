@@ -191,7 +191,7 @@ function Main() {
                         I love Front-end.
                         This can help me communicate to user.
                         Especially i enjoying React.
-                        and also i like learn new skills.
+                        and also love learn new skills.<br/>
                         I Always have a challenging attitude to everyting <br />
                         Finally, I Love every sports play with a ball :)
                         </p>
@@ -311,15 +311,15 @@ function Main() {
                     <div className="project_item3 pjitem" onClick={handleOpen3}>
                         <div className="project_img3 pjimg"></div>
                         <div className="project_des3 desc">
-                            <p>컴투스 3x3 프리미어리그 웹 창작(2020)</p>
+                            <p>컴투스 3x3 프리미어리그 사이트(2020)</p>
                             <p>WEB</p>
                         </div>
                     </div>
 
                 </div>
 
-
-                <h4>If you're curious about Me, try hovering the picture on the left.</h4>
+                <h4>Thank you for viewing this site :)</h4>
+                <h4>If you are interested in me, try hovering the picture on the left.</h4>
 
 
             </div>
