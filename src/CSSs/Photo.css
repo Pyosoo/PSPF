@@ -1,90 +1,180 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+
+
+@media screen and (min-width: 320px) and (max-width: 480px){
+    .flip-container {
+        perspective: 1000px;
+        height: 100%;
+        background-color: black;
+        overflow: hidden;
+    }
+    
+    /* front pane, placed above back */
+    .front{
+        z-index:2;
+        background:url('../Images/Myphoto2.jpg');
+        transform: rotateY(0deg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    /* back, initially hidden pane */
+    .back {
+        transform: rotateY(180deg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        opacity: 1;
+        color: white;
+    }
+    .back_text{
+        width: 100%;
+        opacity: 1;
+        font-family: 'Roboto', sans-serif;
+    }
+    .back_text p {
+        display: block;
+        width: 55%;
+        margin-left: 30%;
+        text-align: left;
+        font-size: 13px;
+    }
+    .back_text a{
+        text-decoration: none;
+        color: white;
+    }
+    .text_line1{
+        width: 100%;
+    }
+    .text_line2{
+        width: 100%;
+    }
+    .IconImage{
+        display: inline-block;
+        font-size: 13px;
+        margin-right: 10px;
+    }
+    .back_text p {
+        display: inline-block;
+    }
+    /* flip the pane when hovered */
+    .flip-container:hover .flipper, .flip-container.hover .flipper {
+        transform: rotateY(180deg);
+    }
+    
+    .flip-container, .front, .back {
+        width: 100%;
+        height: 100%;
+       /*border:1px solid lightgray;*/
+    }
+    /* flip speed goes here */
+    .flipper {
+        transition: 0.6s;
+       /* 하위요소에 3D 좌표값 지정 */
+        transform-style: preserve-3d;
+        position: relative;
+        height: 100%;
+    }
+    /* hide back of pane during swap */
+    .front, .back{
+      position: absolute;
+      backface-visibility:hidden;
+    }
+    
+    h4{
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 1280px){
+    .flip-container {
+        perspective: 1000px;
+        height: 100%;
+        background-color: black;
+        overflow: hidden;
+    }
+    
+    /* front pane, placed above back */
+    .front{
+        z-index:2;
+        background:url('../Images/Myphoto2.jpg');
+        transform: rotateY(0deg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    /* back, initially hidden pane */
+    .back {
+        transform: rotateY(180deg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        opacity: 1;
+        color: white;
+    }
+    .back_text{
+        width: 100%;
+        text-align: center;
+        margin-top: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        opacity: 1;
+        font-family: 'Roboto', sans-serif;
+    }
+    .back_text p {
+        display: block;
+        width: 55%;
+        margin-left: 30%;
+        text-align: left;
+        font-size: 20px;
+    }
+    .back_text a{
+        text-decoration: none;
+        color: white;
+    }
+    .text_line1{
+        width: 100%;
+    }
+    .text_line2{
+        width: 100%;
+    }
+    .IconImage{
+        display: inline-block;
+        font-size: 20px;
+        margin-right: 10px;
+    }
+    .back_text p {
+        display: inline-block;
+    }
+    /* flip the pane when hovered */
+    .flip-container:hover .flipper, .flip-container.hover .flipper {
+        transform: rotateY(180deg);
+    }
+    
+    .flip-container, .front, .back {
+        width: 100%;
+        height: 100%;
+       /*border:1px solid lightgray;*/
+    }
+    /* flip speed goes here */
+    .flipper {
+        transition: 0.6s;
+       /* 하위요소에 3D 좌표값 지정 */
+        transform-style: preserve-3d;
+        position: relative;
+        height: 100%;
+    }
+    /* hide back of pane during swap */
+    .front, .back{
+      position: absolute;
+      backface-visibility:hidden;
+    }
+    
+    h4{
+        width: 100%;
+        text-align: center;
+    }
+}
 /* entire container, keeps perspective */
-.flip-container {
-    perspective: 1000px;
-    height: 100%;
-    background-color: black;
-    overflow: hidden;
-}
-
-/* front pane, placed above back */
-.front{
-    z-index:2;
-    background:url('../Images/Myphoto2.jpg');
-    transform: rotateY(0deg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-/* back, initially hidden pane */
-.back {
-    transform: rotateY(180deg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    opacity: 1;
-    color: white;
-}
-.back_text{
-    width: 100%;
-    text-align: center;
-    margin-top: 50%;
-    margin-left: auto;
-    margin-right: auto;
-    opacity: 1;
-    font-family: 'Roboto', sans-serif;
-}
-.back_text p {
-    display: block;
-    width: 55%;
-    margin-left: 30%;
-    text-align: left;
-    font-size: 20px;
-}
-.back_text a{
-    text-decoration: none;
-    color: white;
-}
-.text_line1{
-    width: 100%;
-}
-.text_line2{
-    width: 100%;
-}
-.IconImage{
-    display: inline-block;
-    font-size: 20px;
-    margin-right: 10px;
-}
-.back_text p {
-    display: inline-block;
-}
-/* flip the pane when hovered */
-.flip-container:hover .flipper, .flip-container.hover .flipper {
-    transform: rotateY(180deg);
-}
-
-.flip-container, .front, .back {
-    width: 100%;
-    height: 100%;
-   /*border:1px solid lightgray;*/
-}
-/* flip speed goes here */
-.flipper {
-    transition: 0.6s;
-   /* 하위요소에 3D 좌표값 지정 */
-    transform-style: preserve-3d;
-    position: relative;
-    height: 100%;
-}
-/* hide back of pane during swap */
-.front, .back{
-  position: absolute;
-  backface-visibility:hidden;
-}
-
-h4{
-    width: 100%;
-    text-align: center;
-}

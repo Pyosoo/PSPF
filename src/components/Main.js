@@ -242,7 +242,7 @@ function Main() {
                                 <span></span>
                                 <span></span>
                                 <div className="content">
-                                    Javascript
+                                    JS
                                 </div>
                                 <div className="content_hover">
                                     60%

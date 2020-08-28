@@ -11,11 +11,6 @@ function App() {
         <div className="Photo_component">
           <Photo />
         </div>
-        {/* 
-        <div className="footer_component">
-          <Profile />
-        </div>
-        */}
       </div>
 
 

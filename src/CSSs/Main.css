@@ -6,664 +6,1210 @@
 @import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@900&display=swap');
 
 
-.Main_Total_Container{
-    height: 100%;
-    overflow-y: scroll;
-    background-color: black;
-    overflow-x: hidden;
-}
-
-.Logo{
-    display: block;
-    margin-left: auto;
-    margin-right: 20px;
-    width: 150px;
-    height: 150px;
-    background-image: url('../Images/Mylogo.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.Main_Container{
-    height: 3000px;
-    color: white;
-    margin-top: -150px;
-}
-
-.Main_text{
-    margin-top: 50%;
-    width: 70%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    font-family: 'Roboto Mono', monospace;
-}
-
-.text1 {
-    font-size: 30px;
-}
-h4{
-    font-family: 'Roboto Mono';
-}
-/* skillset 그래프 */
-.Main_skillset{
-    margin-top: 15%;
-    width: 100%;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-
- /*==================== see more 버튼 관련 ===========*/
-.button {
-	display: inline-block;
-	width: 200px;
-    height: 54px;
-	text-align: center;
-	text-decoration: none;
-	line-height: 54px;
-	outline: none;
-}
-.button::before,
-.button::after {
-	position: absolute;
-	z-index: -1;
-	display: block;
-	content: '';
-}
-.button,
-.button::before,
-.button::after {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-	-webkit-transition: all .3s;
-	transition: all .3s;
-}
-.button {
-	position: relative;
-	z-index: 2;
-	background-color: #333;
-	border: 2px solid #333;
-	color: #fff;
-	line-height: 50px;
-}
-.button:hover {
-	background-color: #fff;
-	border-color: #c3d37d;
-    color: #c3d37d;
-    cursor: pointer;
-}
-.button::before,
-.button::after {
-	top: 0;
-	width: 50%;
-	height: 100%;
-	background-color: #333;
-}
-.button::before {
-	right: 0;
-}
-.button::after {
-	left: 0;
-}
-.button:hover::before,
-.button:hover::after {
-	width: 0;
-	background-color: #c3d37d;
-}
-.btn1{
-    display: block;
-    margin-top: 150px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.button2 {
-	display: inline-block;
-	width: 200px;
-    height: 54px;
-	text-align: center;
-	text-decoration: none;
-	line-height: 54px;
-    outline: none;
-    font-size: 17px;
-}
-.button2::before,
-.button2::after {
-	position: absolute;
-	z-index: -1;
-	display: block;
-	content: '';
-}
-.button2,
-.button2::before,
-.button2::after {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-	-webkit-transition: all .3s;
-	transition: all .3s;
-}
-.button2 {
-	position: relative;
-	z-index: 2;
-	background-color: #333;
-	border: 2px solid #333;
-	color: #fff;
-	line-height: 50px;
-}
-.button2:hover {
-	background-color: #fff;
-	border-color: #c3d37d;
-    color: #c3d37d;
-    cursor: pointer;
-    font-size: 17px;
-}
-.button2::before,
-.button2::after {
-	top: 0;
-	width: 50%;
-	height: 100%;
-	background-color: #333;
-}
-.button2::before {
-	right: 0;
-}
-.button2::after {
-	left: 0;
-}
-.button2:hover::before,
-.button2:hover::after {
-	width: 0;
-	background-color: #c3d37d;
-}
-
-#SKILLSET{
-    width: 1px;
-    height: 2px;
-}
-
-/* ========================================== skillset 관련 ========== */
-.skill_item_Container{
-    width: 100%;
-    height: 300px;
-    border: 1px 0 1px 0;
-    display: inline-block;
-}
-
-.skill_item{
-    width: 80px;
-    height: 80px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-.item1{
-    background-image: url('../Images/C.png');
-}
-.item2{
-    background-image: url('../Images/C++.png');
-}
-.item3{
-    background-image: url('../Images/javascript.png');
-}
-.item4{
-    background-image: url('../Images/html.png');
-}
-.item5{
-    background-image: url('../Images/css.png');
-}
-.item6{
-    background-image: url('../Images/ReactImg.png');
-}
-
-.square_line {
-    display: flex;
-    width: 100%;
-}
-.square{
-    position: relative;
-    width: 120px;
-    height: 120px;
-    display: inline-block;
-    justify-content: center;
-    align-items: center;
-}
-.square:hover > .content{
-    display: none;
-}
-.square:hover > .content_hover{
-    display: block;
-}
-
-.square span:nth-child(1){
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: 2px solid white;
-    border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
-    transition: 0.5s;
-    animation: rotate 1.5s linear infinite;
-}
-.square:hover span:nth-child(1){
-    border: 2px solid white;
-    background-color: #333;
-}
-
-
-.square span:nth-child(2){
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: 2px solid white;
-    border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
-    transition: 0.5s;
-    animation: rotate 3s linear infinite;
-}
-.square:hover span:nth-child(2){
-    border: 2px solid white;
-    background-color: #333;
-}
-
-
-.square span:nth-child(3){
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: 2px solid white;
-    border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
-    transition: 0.5s;
-    animation: rotate2 4.5s linear infinite;
-}
-.square:hover span:nth-child(3){
-    border: 2px solid white;
-    background-color: #333;
-}
-
-.content, .content_hover{
-    position: relative;
-    font-family: BMJ;
-    margin-top: 50%;
-}
-.content_hover {
-    display: none;
-}
-
-@keyframes rotate {
-    0%
-    {
-        transform: rotate(0deg);
+@media screen and (min-width: 360px) and (max-width : 480px){
+    .Main_Total_Container{
+        width: 100%;
+        height: 100%;
+        overflow-y: scroll;
+        background-color: black;
+        overflow-x: hidden;
     }
-    100%
-    {
-        transform: rotate(360deg);
+    
+    .Logo{
+        display: block;
+        margin-left: auto;
+        margin-right: 20px;
+        width: 100px;
+        height: 100px;
+        background-image: url('../Images/Mylogo.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
     }
-}
-@keyframes rotate2 {
-    0%
-    {
-        transform: rotate(360deg);
+    
+    .Main_Container{
+        height: 3000px;
+        color: white;
+        margin-top: -150px;
     }
-    100%
-    {
-        transform: rotate(0deg);
+    
+    .Main_text{
+        margin-top: 50%;
+        width: 70%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        font-family: 'Roboto Mono', monospace;
     }
-}
-
-.square{
-    margin-left: 25px;
-    margin-right: 25px;
-    margin-top: 10px;
-}
-.square2{
-    margin-top: 80px;
-}
-.square3{
-    margin-top: 20px;
-}
-.square4{
-    margin-top: 70px;
-}
-.square5{
-    margin-top: 30px;
-}
-.square6{
-    margin-top: 80px;
-}
-.square7{
-    margin-top: 30px;
-}
-
-
-
-
-
-
-
-
-
-
-/* =================================================== project 라인 ============== */
-
-@keyframes ani1 {
-    from {
-        opacity: 0;
+    .text_box span{
+        font-size: 12px;
+        font-weight: bold;
     }
-    to {
-        opacity: 1;
+    .text_box {
+        font-size: 12px;
     }
-}
-
-.Main_project h1 {
-    margin-top: 50vh;
-    width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 40px;
-    color: rgb(107, 106, 104);
-}
-.Main_project {
-    background-color: #f3f1ed;
-    color: white;
-    font-family: 'Londrina Solid', cursive;
-    z-index: 2;
-}
-.Main_project h1{
-    padding-top: 100px;
-}
-.pjitem p {
-    font-size: 13px;
-}
-.project_img1{
-    background-image: url('../Images/PJ1_monitor.png');
-    color : transparent;
-    border-color: transparent;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    z-index: 10;
-}
-
-.project_img2{
-    display: block;
-    outline: 0;
-    background-image: url('../Images/PJ2_mobile.png');
-    color : transparent;
-    border: 0;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    z-index: 10;
-}
-
-.project_img3{
-    background-image: url('../Images/PJ3_monitor.png');
-    color : transparent;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-.pjitem{
-    width: 80%;
-    height: 45vh;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 150px;
-    font-family: 'Roboto Mono', monospace;
-    position: sticky;
-    z-index: 2;
-    border-radius: 20px 20px 20px 20px;
-}
-.pjimg{
-    width: 100%;
-    height: 100%;
-    border: none;
-}
-.desc{
-    display: none;
-    width: 50%;
-    height: 80px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: rgb(201, 196, 196);
-    border-radius: 20px 20px 20px 20px;
-    color: white;
-    font-family: BMJ;
-}
-.desc p:nth-child(1){
-    font-size: 23px;
-    padding-top: 6px;
-}
-.desc p {
-    text-align: center;
-    font-size: 20px;
-}
-
-/* ======================================= 프로젝트 hover시 일어나는 동작 === */
-@keyframes goingup {
-    from{
-        margin-top: -20px;
-        opacity: 0;
+    .text1 {
+        font-size: 15px;
+        font-weight: bold;
     }
-    to{
-        margin-top: -70px;
-        opacity: 1;
+    h4{
+        font-family: 'Roboto Mono';
     }
-}
-.project_item1:hover{cursor: pointer;}
-.project_item1:hover > .project_des1{
-    display: block;
-    z-index: 1;
-    animation: goingup 1s;
-    animation-fill-mode: forwards;
-}
-.project_item2:hover{cursor: pointer;}
-.project_item2:hover > .project_des2{
-    display: block;
-    z-index: 1;
-    animation: goingup 1s;
-    animation-fill-mode: forwards;
-}
-.project_item3:hover{cursor: pointer;}
-.project_item3:hover > .project_des3{
-    display: block;
-    z-index: 1;
-    animation: goingup 1s;
-    animation-fill-mode: forwards;
-}
-
-
-/* =============================================== 모달관련 ======= */
-.Modal_ImgContainer{
-    display: inline-block;
-    width: 500px;
-    height: 350px;
-    margin-top: 50px;
-}
-.Modal_img{
-    width: 100%;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.Modal_textContainer{
-    display: inline-block;
-    width: 300px;
-    height: 200px;
-    font-family: BMJ;
-    font-size: 17px;
-    margin-left: 30px;
-    margin-top: 90px;
-}
-.ImgControlBtn{
-    height: 200px;
-    background-color: transparent;
-    border: none;
-    outline: none;
-}
-.leftBtn{
-    color: white;
-    font-size: 20px;
-    margin-top: 110px;
-}
-.rightBtn{
-    color: white;
-    font-size: 20px;
-    margin-top: 110px;
-}
-.leftBtn:hover{
-    cursor: pointer;
-    color: white;
-    font-size: 20px;
-    margin-top: 110px;
-}
-.rightBtn:hover{
-    cursor: pointer;
-    color: white;
-    font-size: 20px;
-    margin-top: 110px;
-}
-
-
-
-
-
-
-
-/* ================================================ 별똥별 효과 ========== */
-
-
-@keyframes goingDown {
-    from{
-        margin-top: 0;
-        margin-left: 0;
-        opacity: 1;
+    /* skillset 그래프 */
+    .Main_skillset{
+        margin-top: 15%;
+        width: 100%;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
     }
-    to{
-        margin-top: 600px;
-        margin-left: 30%;
-        opacity: 0;
+    
+    
+     /*==================== see more 버튼 관련 ===========*/
+    .button {
+        display: none;
+        width: 200px;
+        height: 54px;
+        text-align: center;
+        text-decoration: none;
+        line-height: 54px;
+        outline: none;
+    }
+    .button::before,
+    .button::after {
+        position: absolute;
+        z-index: -1;
+        display: block;
+        content: '';
+    }
+    .button,
+    .button::before,
+    .button::after {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        -webkit-transition: all .3s;
+        transition: all .3s;
+    }
+    .button {
+        position: relative;
+        z-index: 2;
+        background-color: #333;
+        border: 2px solid #333;
+        color: #fff;
+        line-height: 50px;
+    }
+    .button:hover {
+        background-color: #fff;
+        border-color: #c3d37d;
+        color: #c3d37d;
+        cursor: pointer;
+    }
+    .button::before,
+    .button::after {
+        top: 0;
+        width: 50%;
+        height: 100%;
+        background-color: #333;
+    }
+    .button::before {
+        right: 0;
+    }
+    .button::after {
+        left: 0;
+    }
+    .button:hover::before,
+    .button:hover::after {
+        width: 0;
+        background-color: #c3d37d;
+    }
+    .btn1{
+        display: none;
+        margin-top: 150px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .button2 {
+        display: inline-block;
+        width: 200px;
+        height: 54px;
+        text-align: center;
+        text-decoration: none;
+        line-height: 54px;
+        outline: none;
+        font-size: 17px;
+    }
+    .button2::before,
+    .button2::after {
+        position: absolute;
+        z-index: -1;
+        display: block;
+        content: '';
+    }
+    .button2,
+    .button2::before,
+    .button2::after {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        -webkit-transition: all .3s;
+        transition: all .3s;
+    }
+    .button2 {
+        position: relative;
+        z-index: 2;
+        background-color: #333;
+        border: 2px solid #333;
+        color: #fff;
+        line-height: 50px;
+    }
+    .button2:hover {
+        background-color: #fff;
+        border-color: #c3d37d;
+        color: #c3d37d;
+        cursor: pointer;
+        font-size: 17px;
+    }
+    .button2::before,
+    .button2::after {
+        top: 0;
+        width: 50%;
+        height: 100%;
+        background-color: #333;
+    }
+    .button2::before {
+        right: 0;
+    }
+    .button2::after {
+        left: 0;
+    }
+    .button2:hover::before,
+    .button2:hover::after {
+        width: 0;
+        background-color: #c3d37d;
+    }
+    
+    #SKILLSET{
+        width: 1px;
+        height: 2px;
+    }
+    
+    /* ========================================== skillset 관련 ========== */
+    .skill_item_Container{
+        width: 100%;
+        height: 300px;
+        border: 1px 0 1px 0;
+        display: inline-block;
+    }
+    
+    .skill_item{
+        width: 30px;
+        height: 30px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .item1{
+        background-image: url('../Images/C.png');
+    }
+    .item2{
+        background-image: url('../Images/C++.png');
+    }
+    .item3{
+        background-image: url('../Images/javascript.png');
+    }
+    .item4{
+        background-image: url('../Images/html.png');
+    }
+    .item5{
+        background-image: url('../Images/css.png');
+    }
+    .item6{
+        background-image: url('../Images/ReactImg.png');
+    }
+    
+    .square_line {
+        display: flex;
+        width: 100%;
+    }
+    .square{
+        position: relative;
+        width: 60px;
+        height: 60px;
+        display: inline-block;
+        justify-content: center;
+        align-items: center;
+    }
+    .square:hover > .content{
+        display: none;
+    }
+    .square:hover > .content_hover{
+        display: block;
+    }
+    
+    .square span:nth-child(1){
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 2px solid white;
+        border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+        transition: 0.5s;
+        animation: rotate 1.5s linear infinite;
+    }
+    .square:hover span:nth-child(1){
+        border: 2px solid white;
+        background-color: #333;
+    }
+    
+    
+    .square span:nth-child(2){
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 2px solid white;
+        border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+        transition: 0.5s;
+        animation: rotate 3s linear infinite;
+    }
+    .square:hover span:nth-child(2){
+        border: 2px solid white;
+        background-color: #333;
+    }
+    
+    
+    .square span:nth-child(3){
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 2px solid white;
+        border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+        transition: 0.5s;
+        animation: rotate2 4.5s linear infinite;
+    }
+    .square:hover span:nth-child(3){
+        border: 2px solid white;
+        background-color: #333;
+    }
+    
+    .content, .content_hover{
+        position: relative;
+        font-family: BMJ;
+        margin-top: 40%;
+    }
+    .content_hover {
+        display: none;
+    }
+    
+    @keyframes rotate {
+        0%
+        {
+            transform: rotate(0deg);
+        }
+        100%
+        {
+            transform: rotate(360deg);
+        }
+    }
+    @keyframes rotate2 {
+        0%
+        {
+            transform: rotate(360deg);
+        }
+        100%
+        {
+            transform: rotate(0deg);
+        }
+    }
+    
+    .square{
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 10px;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    /* =================================================== project 라인 ============== */
+    
+    @keyframes ani1 {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    
+    .Main_project h1 {
+        margin-top: 50vh;
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 40px;
+        color: rgb(107, 106, 104);
+    }
+    .Main_project {
+        background-color: #f3f1ed;
+        color: white;
+        font-family: 'Londrina Solid', cursive;
+        z-index: 2;
+    }
+    .Main_project h1{
+        padding-top: 100px;
+    }
+    .pjitem p {
+        font-size: 13px;
+    }
+    .project_img1{
+        background-image: url('../Images/PJ1_monitor.png');
+        color : transparent;
+        border-color: transparent;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        z-index: 10;
+    }
+    
+    .project_img2{
+        display: block;
+        outline: 0;
+        background-image: url('../Images/PJ2_mobile.png');
+        color : transparent;
+        border: 0;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        z-index: 10;
+    }
+    
+    .project_img3{
+        background-image: url('../Images/PJ3_monitor.png');
+        color : transparent;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .pjitem{
+        width: 80%;
+        height: 45vh;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 150px;
+        font-family: 'Roboto Mono', monospace;
+        position: sticky;
+        z-index: 2;
+        border-radius: 20px 20px 20px 20px;
+    }
+    .pjimg{
+        width: 100%;
+        height: 100%;
+        border: none;
+    }
+    .desc{
+        display: none;
+        width: 50%;
+        height: 80px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: rgb(201, 196, 196);
+        border-radius: 20px 20px 20px 20px;
+        color: white;
+        font-family: BMJ;
+    }
+    .desc p:nth-child(1){
+        font-size: 23px;
+        padding-top: 6px;
+    }
+    .desc p {
+        text-align: center;
+        font-size: 20px;
+    }
+    
+    /* ======================================= 프로젝트 hover시 일어나는 동작 === */
+    @keyframes goingup {
+        from{
+            margin-top: -20px;
+            opacity: 0;
+        }
+        to{
+            margin-top: -70px;
+            opacity: 1;
+        }
+    }
+    .project_item1:hover{cursor: pointer;}
+    .project_item1:hover > .project_des1{
+        display: block;
+        z-index: 1;
+        animation: goingup 1s;
+        animation-fill-mode: forwards;
+    }
+    .project_item2:hover{cursor: pointer;}
+    .project_item2:hover > .project_des2{
+        display: block;
+        z-index: 1;
+        animation: goingup 1s;
+        animation-fill-mode: forwards;
+    }
+    .project_item3:hover{cursor: pointer;}
+    .project_item3:hover > .project_des3{
+        display: block;
+        z-index: 1;
+        animation: goingup 1s;
+        animation-fill-mode: forwards;
+    }
+    
+    
+    /* =============================================== 모달관련 ======= */
+    .Modal_ImgContainer{
+        display: inline-block;
+        width: 500px;
+        height: 350px;
+        margin-top: 50px;
+    }
+    .Modal_img{
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .Modal_textContainer{
+        display: inline-block;
+        width: 300px;
+        height: 200px;
+        font-family: BMJ;
+        font-size: 17px;
+        margin-left: 30px;
+        margin-top: 90px;
+    }
+    .ImgControlBtn{
+        height: 200px;
+        background-color: transparent;
+        border: none;
+        outline: none;
+    }
+    .leftBtn{
+        color: white;
+        font-size: 20px;
+        margin-top: 110px;
+    }
+    .rightBtn{
+        color: white;
+        font-size: 20px;
+        margin-top: 110px;
+    }
+    .leftBtn:hover{
+        cursor: pointer;
+        color: white;
+        font-size: 20px;
+        margin-top: 110px;
+    }
+    .rightBtn:hover{
+        cursor: pointer;
+        color: white;
+        font-size: 20px;
+        margin-top: 110px;
+    }
+    
+    
+    
+    
+    
+    
+    
+    /* ================================================ 별똥별 효과 ========== */
+    
+    
+    
+    
+    /* ===================================== a태그, 깃허브 */
+    .Atag_line{
+        display: flex;
+        justify-content: center;
+    }
+    .Atag {
+        text-decoration: none;
+        color: yellow;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .btn2{
+        margin-left: 50px;
     }
 }
-@keyframes goingDown2 {
-    from{
-        margin-top: 400px;
-        margin-left: 0;
-        opacity: 1;
+@media screen and (min-width: 1280px) {
+    .Main_Total_Container{
+        height: 100%;
+        overflow-y: scroll;
+        background-color: black;
+        overflow-x: hidden;
     }
-    to{
-        margin-top: 600px;
-        margin-left: 30%;
-        opacity: 0;
+    
+    .Logo{
+        display: block;
+        margin-left: auto;
+        margin-right: 20px;
+        width: 150px;
+        height: 150px;
+        background-image: url('../Images/Mylogo.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
     }
-}
-@keyframes goingDown3 {
-    from{
-        margin-top: 0;
-        margin-left: 400px;
-        opacity: 1;
+    
+    .Main_Container{
+        height: 3000px;
+        color: white;
+        margin-top: -150px;
     }
-    to{
-        margin-top: 600px;
-        margin-left: 50%;
-        opacity: 0;
+    
+    .Main_text{
+        margin-top: 50%;
+        width: 70%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        font-family: 'Roboto Mono', monospace;
     }
-}
-@keyframes goingDown4 {
-    from{
-        margin-top: 300;
-        margin-left: 400px;
-        opacity: 1;
+    
+    .text1 {
+        font-size: 30px;
     }
-    to{
-        margin-top: 600px;
-        margin-left: 30%;
-        opacity: 0;
+    h4{
+        font-family: 'Roboto Mono';
     }
-}
-@keyframes goingDown5 {
-    from{
-        margin-top: 40;
-        margin-left: 400px;
-        opacity: 1;
+    /* skillset 그래프 */
+    .Main_skillset{
+        margin-top: 15%;
+        width: 100%;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
     }
-    to{
-        margin-top: 600px;
-        margin-left: 40%;
-        opacity: 0;
+    
+    
+     /*==================== see more 버튼 관련 ===========*/
+    .button {
+        display: inline-block;
+        width: 200px;
+        height: 54px;
+        text-align: center;
+        text-decoration: none;
+        line-height: 54px;
+        outline: none;
     }
-}
-.rain_container{
-    width: 100%;
-    z-index: 1;
-}
-.rain1 {
-    position: absolute;
-    width: 250px;
-    height: 130px;
-    background-image: url('../Images/star.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    animation: goingDown 3s linear infinite;
-}
-.rain2 {
-    position: absolute;
-    width: 50px;
-    height: 30px;
-    background-image: url('../Images/star.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    animation: goingDown2 5s linear infinite;
-}
-.rain3 {
-    position: absolute;
-    width: 150px;
-    height: 70px;
-    background-image: url('../Images/star.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    animation: goingDown3 7s linear infinite;
-}
-.rain4 {
-    position: absolute;
-    width: 200px;
-    height: 100px;
-    background-image: url('../Images/star.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    animation: goingDown4 7s linear infinite;
-}
-.rain5 {
-    position: absolute;
-    width: 200px;
-    height: 150px;
-    background-image: url('../Images/star.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    animation: goingDown5 4s linear infinite;
-}
-
-
-/* ===================================== a태그, 깃허브 */
-.Atag_line{
-    display: flex;
-    justify-content: center;
-}
-.Atag {
-    text-decoration: none;
-    color: yellow;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-.btn2{
-    margin-left: 50px;
+    .button::before,
+    .button::after {
+        position: absolute;
+        z-index: -1;
+        display: block;
+        content: '';
+    }
+    .button,
+    .button::before,
+    .button::after {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        -webkit-transition: all .3s;
+        transition: all .3s;
+    }
+    .button {
+        position: relative;
+        z-index: 2;
+        background-color: #333;
+        border: 2px solid #333;
+        color: #fff;
+        line-height: 50px;
+    }
+    .button:hover {
+        background-color: #fff;
+        border-color: #c3d37d;
+        color: #c3d37d;
+        cursor: pointer;
+    }
+    .button::before,
+    .button::after {
+        top: 0;
+        width: 50%;
+        height: 100%;
+        background-color: #333;
+    }
+    .button::before {
+        right: 0;
+    }
+    .button::after {
+        left: 0;
+    }
+    .button:hover::before,
+    .button:hover::after {
+        width: 0;
+        background-color: #c3d37d;
+    }
+    .btn1{
+        display: none;
+        margin-top: 150px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .button2 {
+        display: inline-block;
+        width: 200px;
+        height: 54px;
+        text-align: center;
+        text-decoration: none;
+        line-height: 54px;
+        outline: none;
+        font-size: 17px;
+    }
+    .button2::before,
+    .button2::after {
+        position: absolute;
+        z-index: -1;
+        display: block;
+        content: '';
+    }
+    .button2,
+    .button2::before,
+    .button2::after {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        -webkit-transition: all .3s;
+        transition: all .3s;
+    }
+    .button2 {
+        position: relative;
+        z-index: 2;
+        background-color: #333;
+        border: 2px solid #333;
+        color: #fff;
+        line-height: 50px;
+    }
+    .button2:hover {
+        background-color: #fff;
+        border-color: #c3d37d;
+        color: #c3d37d;
+        cursor: pointer;
+        font-size: 17px;
+    }
+    .button2::before,
+    .button2::after {
+        top: 0;
+        width: 50%;
+        height: 100%;
+        background-color: #333;
+    }
+    .button2::before {
+        right: 0;
+    }
+    .button2::after {
+        left: 0;
+    }
+    .button2:hover::before,
+    .button2:hover::after {
+        width: 0;
+        background-color: #c3d37d;
+    }
+    
+    #SKILLSET{
+        width: 1px;
+        height: 2px;
+    }
+    
+    /* ========================================== skillset 관련 ========== */
+    .skill_item_Container{
+        width: 100%;
+        height: 300px;
+        border: 1px 0 1px 0;
+        display: inline-block;
+    }
+    
+    .skill_item{
+        width: 80px;
+        height: 80px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .item1{
+        background-image: url('../Images/C.png');
+    }
+    .item2{
+        background-image: url('../Images/C++.png');
+    }
+    .item3{
+        background-image: url('../Images/javascript.png');
+    }
+    .item4{
+        background-image: url('../Images/html.png');
+    }
+    .item5{
+        background-image: url('../Images/css.png');
+    }
+    .item6{
+        background-image: url('../Images/ReactImg.png');
+    }
+    
+    .square_line {
+        display: flex;
+        width: 100%;
+    }
+    .square{
+        position: relative;
+        width: 120px;
+        height: 120px;
+        display: inline-block;
+        justify-content: center;
+        align-items: center;
+    }
+    .square:hover > .content{
+        display: none;
+    }
+    .square:hover > .content_hover{
+        display: block;
+    }
+    
+    .square span:nth-child(1){
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 2px solid white;
+        border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+        transition: 0.5s;
+        animation: rotate 1.5s linear infinite;
+    }
+    .square:hover span:nth-child(1){
+        border: 2px solid white;
+        background-color: #333;
+    }
+    
+    
+    .square span:nth-child(2){
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 2px solid white;
+        border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+        transition: 0.5s;
+        animation: rotate 3s linear infinite;
+    }
+    .square:hover span:nth-child(2){
+        border: 2px solid white;
+        background-color: #333;
+    }
+    
+    
+    .square span:nth-child(3){
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 2px solid white;
+        border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+        transition: 0.5s;
+        animation: rotate2 4.5s linear infinite;
+    }
+    .square:hover span:nth-child(3){
+        border: 2px solid white;
+        background-color: #333;
+    }
+    
+    .content, .content_hover{
+        position: relative;
+        font-family: BMJ;
+        margin-top: 50%;
+    }
+    .content_hover {
+        display: none;
+    }
+    
+    @keyframes rotate {
+        0%
+        {
+            transform: rotate(0deg);
+        }
+        100%
+        {
+            transform: rotate(360deg);
+        }
+    }
+    @keyframes rotate2 {
+        0%
+        {
+            transform: rotate(360deg);
+        }
+        100%
+        {
+            transform: rotate(0deg);
+        }
+    }
+    
+    .square{
+        margin-left: 25px;
+        margin-right: 25px;
+        margin-top: 10px;
+    }
+    .square2{
+        margin-top: 80px;
+    }
+    .square3{
+        margin-top: 20px;
+    }
+    .square4{
+        margin-top: 70px;
+    }
+    .square5{
+        margin-top: 30px;
+    }
+    .square6{
+        margin-top: 80px;
+    }
+    .square7{
+        margin-top: 30px;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    /* =================================================== project 라인 ============== */
+    
+    @keyframes ani1 {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    
+    .Main_project h1 {
+        margin-top: 50vh;
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 40px;
+        color: rgb(107, 106, 104);
+    }
+    .Main_project {
+        background-color: #f3f1ed;
+        color: white;
+        font-family: 'Londrina Solid', cursive;
+        z-index: 2;
+    }
+    .Main_project h1{
+        padding-top: 100px;
+    }
+    .pjitem p {
+        font-size: 13px;
+    }
+    .project_img1{
+        background-image: url('../Images/PJ1_monitor.png');
+        color : transparent;
+        border-color: transparent;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        z-index: 10;
+    }
+    
+    .project_img2{
+        display: block;
+        outline: 0;
+        background-image: url('../Images/PJ2_mobile.png');
+        color : transparent;
+        border: 0;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        z-index: 10;
+    }
+    
+    .project_img3{
+        background-image: url('../Images/PJ3_monitor.png');
+        color : transparent;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .pjitem{
+        width: 80%;
+        height: 45vh;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 150px;
+        font-family: 'Roboto Mono', monospace;
+        position: sticky;
+        z-index: 2;
+        border-radius: 20px 20px 20px 20px;
+    }
+    .pjimg{
+        width: 100%;
+        height: 100%;
+        border: none;
+    }
+    .desc{
+        display: none;
+        width: 50%;
+        height: 80px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: rgb(201, 196, 196);
+        border-radius: 20px 20px 20px 20px;
+        color: white;
+        font-family: BMJ;
+    }
+    .desc p:nth-child(1){
+        font-size: 23px;
+        padding-top: 6px;
+    }
+    .desc p {
+        text-align: center;
+        font-size: 20px;
+    }
+    
+    /* ======================================= 프로젝트 hover시 일어나는 동작 === */
+    @keyframes goingup {
+        from{
+            margin-top: -20px;
+            opacity: 0;
+        }
+        to{
+            margin-top: -70px;
+            opacity: 1;
+        }
+    }
+    .project_item1:hover{cursor: pointer;}
+    .project_item1:hover > .project_des1{
+        display: block;
+        z-index: 1;
+        animation: goingup 1s;
+        animation-fill-mode: forwards;
+    }
+    .project_item2:hover{cursor: pointer;}
+    .project_item2:hover > .project_des2{
+        display: block;
+        z-index: 1;
+        animation: goingup 1s;
+        animation-fill-mode: forwards;
+    }
+    .project_item3:hover{cursor: pointer;}
+    .project_item3:hover > .project_des3{
+        display: block;
+        z-index: 1;
+        animation: goingup 1s;
+        animation-fill-mode: forwards;
+    }
+    
+    
+    /* =============================================== 모달관련 ======= */
+    .Modal_ImgContainer{
+        display: inline-block;
+        width: 500px;
+        height: 350px;
+        margin-top: 50px;
+    }
+    .Modal_img{
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .Modal_textContainer{
+        display: inline-block;
+        width: 300px;
+        height: 200px;
+        font-family: BMJ;
+        font-size: 17px;
+        margin-left: 30px;
+        margin-top: 90px;
+    }
+    .ImgControlBtn{
+        height: 200px;
+        background-color: transparent;
+        border: none;
+        outline: none;
+    }
+    .leftBtn{
+        color: white;
+        font-size: 20px;
+        margin-top: 110px;
+    }
+    .rightBtn{
+        color: white;
+        font-size: 20px;
+        margin-top: 110px;
+    }
+    .leftBtn:hover{
+        cursor: pointer;
+        color: white;
+        font-size: 20px;
+        margin-top: 110px;
+    }
+    .rightBtn:hover{
+        cursor: pointer;
+        color: white;
+        font-size: 20px;
+        margin-top: 110px;
+    }
+    
+    
+    
+    
+    
+    
+    
+    /* ================================================ 별똥별 효과 ========== */
+    
+    
+    @keyframes goingDown {
+        from{
+            margin-top: 0;
+            margin-left: 0;
+            opacity: 1;
+        }
+        to{
+            margin-top: 600px;
+            margin-left: 30%;
+            opacity: 0;
+        }
+    }
+    @keyframes goingDown2 {
+        from{
+            margin-top: 400px;
+            margin-left: 0;
+            opacity: 1;
+        }
+        to{
+            margin-top: 600px;
+            margin-left: 30%;
+            opacity: 0;
+        }
+    }
+    @keyframes goingDown3 {
+        from{
+            margin-top: 0;
+            margin-left: 400px;
+            opacity: 1;
+        }
+        to{
+            margin-top: 600px;
+            margin-left: 40%;
+            opacity: 0;
+        }
+    }
+    @keyframes goingDown4 {
+        from{
+            margin-top: 300;
+            margin-left: 400px;
+            opacity: 1;
+        }
+        to{
+            margin-top: 600px;
+            margin-left: 30%;
+            opacity: 0;
+        }
+    }
+    @keyframes goingDown5 {
+        from{
+            margin-top: 40;
+            margin-left: 400px;
+            opacity: 1;
+        }
+        to{
+            margin-top: 600px;
+            margin-left: 40%;
+            opacity: 0;
+        }
+    }
+    .rain_container{
+        width: 100%;
+        z-index: 1;
+    }
+    .rain1 {
+        position: absolute;
+        width: 200px;
+        height: 130px;
+        background-image: url('../Images/star.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        animation: goingDown 3s linear infinite;
+    }
+    .rain2 {
+        position: absolute;
+        width: 50px;
+        height: 30px;
+        background-image: url('../Images/star.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        animation: goingDown2 5s linear infinite;
+    }
+    .rain3 {
+        position: absolute;
+        width: 150px;
+        height: 70px;
+        background-image: url('../Images/star.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        animation: goingDown3 7s linear infinite;
+    }
+    .rain4 {
+        position: absolute;
+        width: 200px;
+        height: 100px;
+        background-image: url('../Images/star.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        animation: goingDown4 7s linear infinite;
+    }
+    .rain5 {
+        position: absolute;
+        width: 200px;
+        height: 150px;
+        background-image: url('../Images/star.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        animation: goingDown5 4s linear infinite;
+    }
+    
+    
+    /* ===================================== a태그, 깃허브 */
+    .Atag_line{
+        display: flex;
+        justify-content: center;
+    }
+    .Atag {
+        text-decoration: none;
+        color: yellow;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .btn2{
+        margin-left: 50px;
+    }
 }
