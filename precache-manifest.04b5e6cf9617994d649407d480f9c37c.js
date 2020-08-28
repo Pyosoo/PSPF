@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b6cd80447ac9bf1d83a8d9246852b431",
+    "revision": "76511811a43e66ef7d9e38091fc9c6c3",
     "url": "/pspf/index.html"
   },
   {
-    "revision": "86fe4e44ab0ac64678ad",
-    "url": "/pspf/static/css/main.63b36119.chunk.css"
+    "revision": "12b9f9b728b9ff0d46ba",
+    "url": "/pspf/static/css/main.3676b286.chunk.css"
   },
   {
     "revision": "99dad9bf3bf0e7f588db",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/pspf/static/js/2.75daf3f0.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "86fe4e44ab0ac64678ad",
-    "url": "/pspf/static/js/main.684e44e7.chunk.js"
+    "revision": "12b9f9b728b9ff0d46ba",
+    "url": "/pspf/static/js/main.5f79a490.chunk.js"
   },
   {
     "revision": "34030029f0a1be1c06db",
@@ -32,8 +32,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/pspf/static/media/Mylogo.12396601.png"
   },
   {
-    "revision": "9fcf5dbe9480f850ff4d8775eea1f177",
-    "url": "/pspf/static/media/Myphoto2.9fcf5dbe.jpg"
+    "revision": "866bdacbe8a8ca5f35517f3d26469171",
+    "url": "/pspf/static/media/Myphoto2.866bdacb.jpg"
+  },
+  {
+    "revision": "07efe59506941d6d8264204f48705d51",
+    "url": "/pspf/static/media/Myphoto3.07efe595.jpg"
   },
   {
     "revision": "1dc40b3a4f1813c1e6c3f9b2c1d2d3cc",
