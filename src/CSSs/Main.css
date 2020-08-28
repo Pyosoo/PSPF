@@ -421,8 +421,8 @@
     }
     .desc{
         display: none;
-        width: 50%;
-        height: 80px;
+        width: 80%;
+        height: 60px;
         margin-left: auto;
         margin-right: auto;
         background-color: rgb(201, 196, 196);
@@ -431,53 +431,39 @@
         font-family: BMJ;
     }
     .desc p:nth-child(1){
-        font-size: 23px;
+        font-size: 18px;
         padding-top: 6px;
     }
     .desc p {
         text-align: center;
-        font-size: 20px;
+        font-size: 15px;
     }
     
     /* ======================================= 프로젝트 hover시 일어나는 동작 === */
-    @keyframes goingup {
-        from{
-            margin-top: -20px;
-            opacity: 0;
-        }
-        to{
-            margin-top: -70px;
-            opacity: 1;
-        }
-    }
-    .project_item1:hover{cursor: pointer;}
-    .project_item1:hover > .project_des1{
+   
+    .project_des1{
         display: block;
+        margin-top: -60px;
         z-index: 1;
-        animation: goingup 1s;
-        animation-fill-mode: forwards;
     }
-    .project_item2:hover{cursor: pointer;}
-    .project_item2:hover > .project_des2{
+    .project_des2{
         display: block;
+        margin-top: -60px;
         z-index: 1;
-        animation: goingup 1s;
-        animation-fill-mode: forwards;
     }
-    .project_item3:hover{cursor: pointer;}
-    .project_item3:hover > .project_des3{
+    .project_des3{
         display: block;
+        margin-top: -60px;
         z-index: 1;
-        animation: goingup 1s;
-        animation-fill-mode: forwards;
     }
     
     
     /* =============================================== 모달관련 ======= */
+  
     .Modal_ImgContainer{
-        display: inline-block;
-        width: 500px;
-        height: 350px;
+        display: none;
+        width: 80%;
+        height: 150px;
         margin-top: 50px;
     }
     .Modal_img{
@@ -487,16 +473,18 @@
         background-size: cover;
     }
     .Modal_textContainer{
-        display: inline-block;
+        display: block;
         width: 300px;
         height: 200px;
         font-family: BMJ;
-        font-size: 17px;
+        font-size: 12px;
         margin-left: 30px;
         margin-top: 90px;
     }
     .ImgControlBtn{
-        height: 200px;
+        width: 10%;
+        display: none;
+        height: 70px;
         background-color: transparent;
         border: none;
         outline: none;
@@ -538,6 +526,7 @@
     /* ===================================== a태그, 깃허브 */
     .Atag_line{
         display: flex;
+        width: 100%;
         justify-content: center;
     }
     .Atag {
@@ -547,7 +536,6 @@
         margin-right: 10px;
     }
     .btn2{
-        margin-left: 50px;
     }
 }
 @media screen and (min-width: 1280px) {
@@ -660,7 +648,7 @@
         background-color: #c3d37d;
     }
     .btn1{
-        display: none;
+        display: block;
         margin-top: 150px;
         margin-left: auto;
         margin-right: auto;

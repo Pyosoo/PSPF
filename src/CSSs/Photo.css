@@ -13,7 +13,7 @@
     /* front pane, placed above back */
     .front{
         z-index:2;
-        background:url('../Images/Myphoto2.jpg');
+        background:url('../Images/Myphoto3.jpg');
         transform: rotateY(0deg);
         background-size: cover;
         background-repeat: no-repeat;

@@ -20,12 +20,13 @@ const useStyles = makeStyles((theme) => ({
     },
     paper: {
         display: 'flex',
+        justifyContent : 'center',
         backgroundColor: 'rgb(179, 178, 178)',
         borderRadius: '20px 20px 20px 20px',
         color: 'white',
         boxShadow: theme.shadows[5],
         padding: theme.spacing(2, 4, 3),
-        width: '900px',
+        width: '60%',
         height: '450px',
         outline: '0px'
     },
@@ -176,10 +177,10 @@ function Main() {
                 <div className="rain4 rain"></div>
                 <div className="rain5 rain"></div>
             </div>
-           
+
             <div id="TOP" ></div>
             <div className="Logo" onClick={GoTop}></div>
-            
+
             <div className="MenuIcon"></div>
 
 
@@ -191,7 +192,7 @@ function Main() {
                         I love Front-end.
                         This can help me communicate to user.
                         Especially i enjoying React.
-                        and also love learn new skills.<br/>
+                        and also love learn new skills.<br />
                         I Always have a challenging attitude to everyting <br />
                         Finally, I Love every sports play with a ball :)
                         </p>
@@ -293,14 +294,14 @@ function Main() {
                 <div id="PROJECT" className="Main_project">
                     <h1>My Project</h1>
 
-                        <div className="project_item1 pjitem" onClick={handleOpen}>
-                            <div className="project_img1 pjimg"></div>
-                            <div className="project_des1 desc">
-                                <p>구구단 학습 반응형 웹앱(2020)</p>
-                                <p>RESPONSIVE WEB</p>
-                            </div>
+                    <div className="project_item1 pjitem" onClick={handleOpen}>
+                        <div className="project_img1 pjimg"></div>
+                        <div className="project_des1 desc">
+                            <p>구구단 학습 반응형 웹앱(2020)</p>
+                            <p>RESPONSIVE WEB</p>
                         </div>
-                   
+                    </div>
+
                     <div className="project_item2 pjitem" onClick={handleOpen2}>
                         <div className="project_img2 pjimg" ></div>
                         <div className="project_des2 desc">
@@ -338,13 +339,13 @@ function Main() {
             >
                 <Fade in={open}>
                     <div className={classes.paper}>
-
                         <button className="ImgControlBtn leftBtn" onClick={minusIndex}>◁</button>
-
                         <div className="Modal_ImgContainer">
                             <img className="Modal_img" src={require(`../Images/PJ1/${pj1Arr[imgidx]}.PNG`)}></img>
                         </div>
                         <button className="ImgControlBtn rightBtn" onClick={plusIndex}>▷</button>
+
+                           
 
                         <div className="Modal_textContainer">
                             <h2> 반응형 구구단 학습 웹앱</h2>
