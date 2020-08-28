@@ -424,7 +424,7 @@ function Main() {
                         <button className="ImgControlBtn rightBtn" onClick={plusIndex3}>▷</button>
 
                         <div className="Modal_textContainer">
-                            <h2>컴투스 3x3프리미어 리그 웹사이트</h2>
+                            <h3>컴투스 3x3 리그 웹사이트</h3>
                             <p>나의 역할 : 개인프로젝트</p>
                             <p>사용 기술 : Javascript, HTML, CSS, React.js</p>
                             <p>설명 : 컴투스에서 주최한 3x3프리미어리그를 재미있게 보고 이 대회만을 위한 사이트를 찾던 중 발견하지 못하여
