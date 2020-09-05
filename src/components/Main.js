@@ -10,6 +10,7 @@ import { GithubOutlined } from '@ant-design/icons';
 const pj1Arr = ['pj1-0', 'pj1-1', 'pj1-2', 'pj1-3', 'pj1-4', 'pj1-5'];
 const pj2Arr = ['PJ2-1', 'PJ2-2', 'PJ2-3'];
 const pj3Arr = ['PJ3-1', 'PJ3-2', 'PJ3-3', 'PJ3-4', 'PJ3-5', 'PJ3-6'];
+const pj4Arr = ['PJ4-1', 'PJ4-2', 'PJ4-3'];
 
 // =========== 프로젝트 클릭시 관련 MODAL 창 ==================
 const useStyles = makeStyles((theme) => ({
@@ -158,6 +159,36 @@ function Main() {
 
 
 
+    // ================ PJ4 모달 창 관련 ==================================
+    const [imgidx4, setImgidx4] = useState(0); // 이미지 slide효과 위한 index
+    const classes4 = useStyles();
+    const [open4, setOpen4] = React.useState(false);
+
+    const handleOpen4 = () => {
+        setOpen4(true);
+    };
+
+    const handleClose4 = () => {
+        setOpen4(false);
+    };
+    const minusIndex4 = () => {
+        if (imgidx4 <= 0) {
+            setImgidx4(2);
+        } else {
+            setImgidx4(imgidx4 - 1);
+        }
+    }
+
+    const plusIndex4 = () => {
+        if (imgidx4 >= 2) {
+            setImgidx4(0);
+        } else {
+            setImgidx4(imgidx4 + 1);
+        }
+    }
+
+
+
 
     const GoTop = () => {
         document.querySelector('#TOP').scrollIntoView({ block: 'start', behavior: 'smooth' });
@@ -298,7 +329,7 @@ function Main() {
                         <div className="project_img1 pjimg"></div>
                         <div className="project_des1 desc">
                             <p>구구단 학습 반응형 웹앱(2020)</p>
-                            <p>RESPONSIVE WEB</p>
+                            <p>WEB</p>
                         </div>
                     </div>
 
@@ -309,6 +340,15 @@ function Main() {
                             <p>MOBILE APP</p>
                         </div>
                     </div>
+
+                    <div className="project_item4 pjitem" onClick={handleOpen4}>
+                        <div className="project_img4 pjimg" ></div>
+                        <div className="project_des4 desc">
+                            <p>공사중인 지하철역은?(2020)</p>
+                            <p>WEP</p>
+                        </div>
+                    </div>
+
                     <div className="project_item3 pjitem" onClick={handleOpen3}>
                         <div className="project_img3 pjimg"></div>
                         <div className="project_des3 desc">
@@ -347,10 +387,11 @@ function Main() {
 
                            
 
-                        <div className="Modal_textContainer">
+                        <div className="Modal_textContainer Mt1">
                             <h2> 반응형 구구단 학습 웹앱</h2>
                             <p>팀원 수 : 2명(기획디자인, 프론트엔드)</p>
                             <p>나의 역할 : 프론트엔드 전체</p>
+                            <p>협업 도구 : Figma</p>
                             <p>설명 : 유아 구구단 학습을 위한 반응형 웹앱 사이트로 모바일 및 타블렛, PC버전으로 각각 이용이 가능합니다.
                                 구구단외우기, 연습모드(객관식), 시험보기(서술형), 성적확인 을 통한 훈련이며 Localstorage를 이용하여 구현하였습니다.</p>
                             <p className="Atag_line">
@@ -439,6 +480,49 @@ function Main() {
                 </Fade>
             </Modal>
 
+
+            <Modal
+                aria-labelledby="transition-modal-title"
+                aria-describedby="transition-modal-description"
+                className={classes.modal}
+                open={open4}
+                onClose={handleClose4}
+                closeAfterTransition
+                BackdropComponent={Backdrop}
+                BackdropProps={{
+                    timeout: 500,
+                }}
+            >
+                <Fade in={open4}>
+                    <div className={classes.paper}>
+
+                        <button className="ImgControlBtn leftBtn" onClick={minusIndex4}>◁</button>
+
+                        <div className="Modal_ImgContainer">
+                            <img className="Modal_img" src={require(`../Images/PJ4/${pj4Arr[imgidx4]}.PNG`)}></img>
+                        </div>
+                        <button className="ImgControlBtn rightBtn" onClick={plusIndex4}>▷</button>
+
+                        <div className="Modal_textContainer Mt4">
+                            <h3>내 주위 공사중 지하철역</h3>
+                            <p>팀원 수 : 백엔드 1명 포함 2인</p>
+                            <p>나의 역할 : 프론트엔드 </p>
+                            <p>사용 기술 : 프론트 : Javascript, HTML, CSS, React.js Redux Navermap API<br/>
+                                        백엔드 : Python, Django, DRF, SQLite, PythonAnywhere
+                            </p>
+                            <p>설명 : 현재 지하철역의 승강 시설의 공사중 유무 데이터를 크롤링하여 사용자들에게 쉽게 알 수 있는 사이트를 제공해주고자
+                                만들게 되었습니다. 시작 시 위치허용을 통해 자기 중심의 지도로 시작하며, 데이터에 따라 공사중인 역으로 이동할 수 있는 
+                                사이드바를 통해 맵을 컨트롤할 수 있게하였습니다. 
+                            </p>
+                            <p className="Atag_line">
+                                <a href="https://pyosoo.github.io/under_construction/" target="blank" className="Atag">체험하기</a>
+                                <a href="https://github.com/Pyosoo/under_construction" target="blank" className="Atag">GitHub<GithubOutlined /></a>
+                            </p>
+                            <button className="button2 btn2" onClick={handleClose4}>Close</button>
+                        </div>
+                    </div>
+                </Fade>
+            </Modal>
         </div>
     )
 }

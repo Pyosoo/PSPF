@@ -937,9 +937,15 @@
         background-position: center;
         z-index: 10;
     }
-    
     .project_img3{
         background-image: url('../Images/PJ3_monitor.png');
+        color : transparent;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    } 
+    .project_img4{
+        background-image: url('../Images/PJ4_monitor.png');
         color : transparent;
         background-size: contain;
         background-repeat: no-repeat;
@@ -1013,6 +1019,13 @@
         animation: goingup 1s;
         animation-fill-mode: forwards;
     }
+    .project_item4:hover{cursor: pointer;}
+    .project_item4:hover > .project_des4{
+        display: block;
+        z-index: 1;
+        animation: goingup 1s;
+        animation-fill-mode: forwards;
+    }
     
     
     /* =============================================== 모달관련 ======= */
@@ -1036,6 +1049,12 @@
         font-size: 17px;
         margin-left: 30px;
         margin-top: 90px;
+    }
+    .Mt1{
+        margin-top: 50px;
+    }
+    .Mt4{
+        margin-top: 0px;
     }
     .ImgControlBtn{
         height: 200px;
