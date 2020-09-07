@@ -329,7 +329,6 @@ function Main() {
                         <div className="project_img1 pjimg"></div>
                         <div className="project_des1 desc">
                             <p>구구단 학습 반응형 웹앱(2020)</p>
-                            <p>WEB</p>
                         </div>
                     </div>
 
@@ -337,7 +336,6 @@ function Main() {
                         <div className="project_img2 pjimg" ></div>
                         <div className="project_des2 desc">
                             <p>농구 기록지 어플리케이션(2019)</p>
-                            <p>MOBILE APP</p>
                         </div>
                     </div>
 
@@ -345,7 +343,6 @@ function Main() {
                         <div className="project_img4 pjimg" ></div>
                         <div className="project_des4 desc">
                             <p>공사중인 지하철역은?(2020)</p>
-                            <p>WEP</p>
                         </div>
                     </div>
 
@@ -353,7 +350,6 @@ function Main() {
                         <div className="project_img3 pjimg"></div>
                         <div className="project_des3 desc">
                             <p>컴투스 3x3 프리미어리그 사이트(2020)</p>
-                            <p>WEB</p>
                         </div>
                     </div>
 

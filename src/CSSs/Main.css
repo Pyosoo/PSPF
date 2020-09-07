@@ -28,7 +28,7 @@
     }
     
     .Main_Container{
-        height: 3000px;
+        height: 2200px;
         color: white;
         margin-top: -150px;
     }
@@ -365,6 +365,8 @@
     .Main_project {
         background-color: #f3f1ed;
         color: white;
+        margin-top: -400px;
+        height: 1300px;
         font-family: 'Londrina Solid', cursive;
         z-index: 2;
     }
@@ -411,7 +413,7 @@
     }
     .pjitem{
         width: 80%;
-        height: 45vh;
+        height: 130px;
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 150px;
@@ -449,22 +451,22 @@
    
     .project_des1{
         display: block;
-        margin-top: -130px;
+        margin-top: -15px;
         z-index: 1;
     }
     .project_des2{
         display: block;
-        margin-top: -60px;
+        margin-top: -20px;
         z-index: 1;
     }
     .project_des3{
         display: block;
-        margin-top: -130px;
+        margin-top: -30px;
         z-index: 1;
     }
     .project_des4{
         display: block;
-        margin-top: -120px;
+        margin-top: -30px;
         z-index: 1;
     }
     
@@ -526,11 +528,76 @@
     
     
     
-    
-    
-    
     /* ================================================ 별똥별 효과 ========== */
     
+    
+    @keyframes goingDown {
+        from{
+            margin-top: 0;
+            margin-left: 0;
+            opacity: 1;
+        }
+        to{
+            margin-top: 600px;
+            margin-left: 42%;
+            opacity: 0;
+        }
+    }
+    @keyframes goingDown2 {
+        from{
+            margin-top: 0;
+            margin-left: 50px;
+            opacity: 1;
+        }
+        to{
+            margin-top: 600px;
+            margin-left: 50px;
+            opacity: 0;
+        }
+    }
+    @keyframes goingDown3 {
+        from{
+            margin-top: 0;
+            margin-left: 120px;
+            opacity: 1;
+        }
+        to{
+            margin-top: 600px;
+            margin-left: 120px;
+            opacity: 0;
+        }
+    }
+    .rain_container{
+        width: 100%;
+        z-index: 1;
+    }
+    .rain1 {
+        position: absolute;
+        width: 200px;
+        height: 130px;
+        background-image: url('../Images/star.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        animation: goingDown 3s linear infinite;
+    }
+    .rain2 {
+        position: absolute;
+        width: 50px;
+        height: 30px;
+        background-image: url('../Images/star.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        animation: goingDown2 5s linear infinite;
+    }
+    .rain3 {
+        position: absolute;
+        width: 150px;
+        height: 70px;
+        background-image: url('../Images/star.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        animation: goingDown3 7s linear infinite;
+    }
     
     
     
@@ -981,7 +1048,7 @@
     .desc{
         display: none;
         width: 50%;
-        height: 80px;
+        height: 40px;
         margin-left: auto;
         margin-right: auto;
         background-color: rgb(201, 196, 196);
