@@ -8,6 +8,7 @@
 
 @media screen and (min-width: 360px) and (max-width : 480px){
     .Main_Total_Container{
+        position: relative;
         width: 100%;
         height: 100%;
         overflow-y: scroll;
@@ -539,7 +540,7 @@
         }
         to{
             margin-top: 600px;
-            margin-left: 42%;
+            margin-left: 90%;
             opacity: 0;
         }
     }
@@ -551,7 +552,7 @@
         }
         to{
             margin-top: 600px;
-            margin-left: 50px;
+            margin-left: 350px;
             opacity: 0;
         }
     }
@@ -563,7 +564,19 @@
         }
         to{
             margin-top: 600px;
+            margin-left: 440px;
+            opacity: 0;
+        }
+    }
+    @keyframes goingDown4 {
+        from{
+            margin-top: 100px;
             margin-left: 120px;
+            opacity: 1;
+        }
+        to{
+            margin-top: 600px;
+            margin-left: 440px;
             opacity: 0;
         }
     }
@@ -598,6 +611,15 @@
         background-repeat: no-repeat;
         animation: goingDown3 7s linear infinite;
     }
+    .rain4 {
+        position: absolute;
+        width: 180px;
+        height: 100px;
+        background-image: url('../Images/star.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        animation: goingDown4 4s linear infinite;
+    }
     
     
     
@@ -618,6 +640,7 @@
 }
 @media screen and (min-width: 1280px) {
     .Main_Total_Container{
+        position: relative;
         height: 100%;
         overflow-y: scroll;
         background-color: black;
@@ -1180,7 +1203,7 @@
         }
         to{
             margin-top: 600px;
-            margin-left: 30%;
+            margin-left: 50%;
             opacity: 0;
         }
     }
@@ -1192,7 +1215,7 @@
         }
         to{
             margin-top: 600px;
-            margin-left: 30%;
+            margin-left: 60%;
             opacity: 0;
         }
     }
@@ -1204,7 +1227,7 @@
         }
         to{
             margin-top: 600px;
-            margin-left: 40%;
+            margin-left: 1000px;
             opacity: 0;
         }
     }
@@ -1216,7 +1239,7 @@
         }
         to{
             margin-top: 600px;
-            margin-left: 30%;
+            margin-left: 800px;
             opacity: 0;
         }
     }
@@ -1228,7 +1251,7 @@
         }
         to{
             margin-top: 600px;
-            margin-left: 40%;
+            margin-left: 100%;
             opacity: 0;
         }
     }
