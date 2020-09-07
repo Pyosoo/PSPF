@@ -10,7 +10,7 @@ import { GithubOutlined } from '@ant-design/icons';
 const pj1Arr = ['pj1-0', 'pj1-1', 'pj1-2', 'pj1-3', 'pj1-4', 'pj1-5'];
 const pj2Arr = ['PJ2-1', 'PJ2-2', 'PJ2-3'];
 const pj3Arr = ['PJ3-1', 'PJ3-2', 'PJ3-3', 'PJ3-4', 'PJ3-5', 'PJ3-6'];
-const pj4Arr = ['PJ4-1', 'PJ4-2', 'PJ4-3'];
+const pj4Arr = ['PJ4-1', 'PJ4-2', 'PJ4-3', 'PJ4-4'];
 
 // =========== 프로젝트 클릭시 관련 MODAL 창 ==================
 const useStyles = makeStyles((theme) => ({
@@ -173,14 +173,14 @@ function Main() {
     };
     const minusIndex4 = () => {
         if (imgidx4 <= 0) {
-            setImgidx4(2);
+            setImgidx4(3);
         } else {
             setImgidx4(imgidx4 - 1);
         }
     }
 
     const plusIndex4 = () => {
-        if (imgidx4 >= 2) {
+        if (imgidx4 >= 3) {
             setImgidx4(0);
         } else {
             setImgidx4(imgidx4 + 1);
@@ -511,8 +511,7 @@ function Main() {
                                         백엔드 : Python, Django, DRF, SQLite, PythonAnywhere
                             </p>
                             <p>설명 : 현재 지하철역의 승강 시설의 공사중 유무 데이터를 크롤링하여 사용자들에게 쉽게 알 수 있는 사이트를 제공해주고자
-                                만들게 되었습니다. 시작 시 위치허용을 통해 자기 중심의 지도로 시작하며, 데이터에 따라 공사중인 역으로 이동할 수 있는 
-                                사이드바를 통해 맵을 컨트롤할 수 있게하였습니다. 
+                                만들게 되었습니다. 시작 시 위치허용을 통해 자기 중심의 지도로 시작하며, 사이드바 이동을 통해 지하철의 정보, 도착예정시간을 확인할 수 있습니다.
                             </p>
                             <p className="Atag_line">
                                 <a href="https://pyosoo.github.io/under_construction/" target="blank" className="Atag">체험하기</a>
