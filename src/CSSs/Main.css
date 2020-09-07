@@ -6,7 +6,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@900&display=swap');
 
 
-@media screen and (min-width: 360px) and (max-width : 480px){
+@media screen and (min-width: 359px) and (max-width : 480px){
     .Main_Total_Container{
         position: relative;
         width: 100%;
