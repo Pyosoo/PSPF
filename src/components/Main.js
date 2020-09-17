@@ -220,12 +220,10 @@ function Main() {
                     <p className="text_box text1">{name}</p>
                     <p className="text_box">
                         <span>Pyosoo.JEON</span> <br />
-                        I love Front-end.
-                        This can help me communicate to user.
-                        Especially i enjoying React.
-                        and also love learn new skills.<br />
-                        I Always have a challenging attitude to everyting <br />
-                        Finally, I Love every sports play with a ball :)
+                        안녕하세요, 프론트엔드 개발자를 꿈꾸는 전표수입니다.
+                        사용자와 서비스를 연결시켜주는 프론트엔드에 매력을 느끼고 도전하고 있습니다.
+                        새로운 것을 배우는 걸 좋아하며, 매우 활동적인 성격을 가지고 있습니다.
+                        React에 관심을 갖고 있으며 새롭고 편한 서비스를 만들고 싶습니다. 
                         </p>
                     <button className="button" onClick={GoSKILLSET}>See More</button>
                 </div>
