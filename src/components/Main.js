@@ -11,6 +11,7 @@ const pj1Arr = ['pj1-0', 'pj1-1', 'pj1-2', 'pj1-3', 'pj1-4', 'pj1-5'];
 const pj2Arr = ['PJ2-1', 'PJ2-2', 'PJ2-3'];
 const pj3Arr = ['PJ3-1', 'PJ3-2', 'PJ3-3', 'PJ3-4', 'PJ3-5', 'PJ3-6'];
 const pj4Arr = ['PJ4-1', 'PJ4-2', 'PJ4-3', 'PJ4-4'];
+const pj6Arr = ['PJ6-1', 'PJ6-2', 'PJ6-3', 'PJ6-4', 'PJ6-5']
 
 // =========== 프로젝트 클릭시 관련 MODAL 창 ==================
 const useStyles = makeStyles((theme) => ({
@@ -188,6 +189,34 @@ function Main() {
     }
 
 
+    // ================ PJ6 모달 창 관련 ==================================
+    const [imgidx6, setImgidx6] = useState(0); // 이미지 slide효과 위한 index
+    const classes6 = useStyles();
+    const [open6, setOpen6] = React.useState(false);
+
+    const handleOpen6 = () => {
+        setOpen6(true);
+    };
+
+    const handleClose6 = () => {
+        setOpen6(false);
+    };
+    const minusIndex6 = () => {
+        if (imgidx6 <= 0) {
+            setImgidx6(3);
+        } else {
+            setImgidx4(imgidx6 - 1);
+        }
+    }
+
+    const plusIndex6 = () => {
+        if (imgidx6 >= 4) {
+            setImgidx6(0);
+        } else {
+            setImgidx6(imgidx6 + 1);
+        }
+    }
+
 
 
     const GoTop = () => {
@@ -327,6 +356,13 @@ function Main() {
                         <div className="project_img1 pjimg"></div>
                         <div className="project_des1 desc">
                             <p>구구단 학습 반응형 웹앱(2020)</p>
+                        </div>
+                    </div>
+
+                    <div className="project_item6 pjitem" onClick={handleOpen6}>
+                        <div className="project_img6 pjimg"></div>
+                        <div className="project_des6 desc">
+                            <p>IT스터디 구인 게시판(2020)</p>
                         </div>
                     </div>
 
@@ -512,6 +548,46 @@ function Main() {
                                 <a href="https://github.com/Pyosoo/under_construction" target="blank" className="Atag">GitHub<GithubOutlined /></a>
                             </p>
                             <button className="button2 btn2" onClick={handleClose4}>Close</button>
+                        </div>
+                    </div>
+                </Fade>
+            </Modal>
+
+            <Modal
+                aria-labelledby="transition-modal-title"
+                aria-describedby="transition-modal-description"
+                className={classes.modal}
+                open={open6}
+                onClose={handleClose6}
+                closeAfterTransition
+                BackdropComponent={Backdrop}
+                BackdropProps={{
+                    timeout: 500,
+                }}
+            >
+                <Fade in={open6}>
+                    <div className={classes.paper}>
+
+                        <button className="ImgControlBtn leftBtn" onClick={minusIndex6}>◁</button>
+
+                        <div className="Modal_ImgContainer">
+                            <img className="Modal_img" src={require(`../Images/PJ6/${pj6Arr[imgidx6]}.PNG`)}></img>
+                        </div>
+                        <button className="ImgControlBtn rightBtn" onClick={plusIndex6}>▷</button>
+
+                        <div className="Modal_textContainer">
+                            <h2>IT스터디 게시판</h2>
+                            <p>나의 역할 : 개인프로젝트</p>
+                            <p>사용 기술 : React, Redux, Firebase(DB,Hosting,Auth), HTML, CSS, Javascript</p>
+                            <p>설명 : 기존의 캠퍼스픽에서의 스터디게시판의 불편한 점을 개선하기 위해 나만의
+                                방식으로 만들어본 IT스터디 구인 게시판입니다. 두루마리형태의 재미와 나의 페이지,
+                                스크랩 기능들을 더하여 만들어보았습니다.
+                            </p>
+                            <p>비고 : 현재 진행중 (2020.10.01 ~ )</p>
+                            <p className="Atag_line">
+                            <a href="https://studysitefb.firebaseapp.com/" target="blank" className="Atag">체험하기</a>
+                            </p>
+                            <button className="button2 btn2" onClick={handleClose6}>Close</button>
                         </div>
                     </div>
                 </Fade>

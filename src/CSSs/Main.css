@@ -1053,6 +1053,13 @@
         background-repeat: no-repeat;
         background-position: center;
     }
+    .project_img6{
+        background-image: url('../Images/PJ6_monitor.png');
+        color : transparent;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
     .pjitem{
         width: 80%;
         height: 45vh;
@@ -1128,7 +1135,14 @@
         animation: goingup 1s;
         animation-fill-mode: forwards;
     }
-    
+
+    .project_item6:hover{cursor: pointer;}
+    .project_item6:hover > .project_des6{
+        display: block;
+        z-index: 1;
+        animation: goingup 1s;
+        animation-fill-mode: forwards;
+    }
     
     /* =============================================== 모달관련 ======= */
     .Modal_ImgContainer{
@@ -1150,7 +1164,7 @@
         font-family: BMJ;
         font-size: 17px;
         margin-left: 30px;
-        margin-top: 90px;
+        margin-top: 50px;
     }
     .Mt1{
         margin-top: 50px;
