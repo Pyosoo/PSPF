@@ -3,6 +3,11 @@
     font-family: "BMJ";
     src: url('../Fonts/BMJUA_ttf.7dbe95a7.ttf');
 }
+@font-face {
+    font-family: "BHS";
+    src: url('../Fonts/BMJUA_ttf.7dbe95a7.ttf');
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@900&display=swap');
 
 
@@ -639,6 +644,9 @@
     }
 }
 @media screen and (min-width: 1280px) {
+    p{
+        font-family: BHS;
+    }
     .Main_Total_Container{
         position: relative;
         height: 100%;
@@ -671,7 +679,7 @@
         display: block;
         margin-left: auto;
         margin-right: auto;
-        font-weight: 1000;
+        font-size: 17px;
         font-family: 'Roboto Mono', monospace;
     }
     
