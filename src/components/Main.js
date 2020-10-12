@@ -11,7 +11,7 @@ const pj1Arr = ['pj1-0', 'pj1-1', 'pj1-2', 'pj1-3', 'pj1-4', 'pj1-5'];
 const pj2Arr = ['PJ2-1', 'PJ2-2', 'PJ2-3'];
 const pj3Arr = ['PJ3-1', 'PJ3-2', 'PJ3-3', 'PJ3-4', 'PJ3-5', 'PJ3-6'];
 const pj4Arr = ['PJ4-1', 'PJ4-2', 'PJ4-3', 'PJ4-4'];
-const pj6Arr = ['PJ6-1', 'PJ6-2', 'PJ6-3', 'PJ6-4', 'PJ6-5']
+const pj6Arr = ['PJ6-0', 'PJ6-1', 'PJ6-2', 'PJ6-3', 'PJ6-4', 'PJ6-5']
 
 // =========== 프로젝트 클릭시 관련 MODAL 창 ==================
 const useStyles = makeStyles((theme) => ({
@@ -210,7 +210,7 @@ function Main() {
     }
 
     const plusIndex6 = () => {
-        if (imgidx6 >= 4) {
+        if (imgidx6 >= 5) {
             setImgidx6(0);
         } else {
             setImgidx6(imgidx6 + 1);
@@ -362,7 +362,7 @@ function Main() {
                     <div className="project_item6 pjitem" onClick={handleOpen6}>
                         <div className="project_img6 pjimg"></div>
                         <div className="project_des6 desc">
-                            <p>IT스터디 구인 게시판(2020)</p>
+                            <p>IT스터디 구인 게시판 웹앱(2020)</p>
                         </div>
                     </div>
 
@@ -576,14 +576,13 @@ function Main() {
                         <button className="ImgControlBtn rightBtn" onClick={plusIndex6}>▷</button>
 
                         <div className="Modal_textContainer">
-                            <h2>IT스터디 게시판</h2>
+                            <h2>IT스터디 게시판 웹앱</h2>
                             <p>나의 역할 : 개인프로젝트</p>
                             <p>사용 기술 : React, Redux, Firebase(DB,Hosting,Auth), HTML, CSS, Javascript</p>
                             <p>설명 : 기존의 캠퍼스픽에서의 스터디게시판의 불편한 점을 개선하기 위해 나만의
                                 방식으로 만들어본 IT스터디 구인 게시판입니다. 두루마리형태의 재미와 나의 페이지,
-                                스크랩 기능들을 더하여 만들어보았습니다.
+                                스크랩 기능들을 더하여 만들어보았습니다. 모바일에서도 즐길 수 있습니다.
                             </p>
-                            <p>비고 : 현재 진행중 (2020.10.01 ~ )</p>
                             <p className="Atag_line">
                             <a href="https://studysitefb.firebaseapp.com/" target="blank" className="Atag">체험하기</a>
                             </p>
