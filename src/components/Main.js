@@ -577,7 +577,7 @@ function Main() {
 
                         <div className="Modal_textContainer">
                             <h2>IT스터디 게시판 웹앱</h2>
-                            <p>나의 역할 : 개인프로젝트</p>
+                            <p>나의 역할 : 개인프로젝트(진행중)</p>
                             <p>사용 기술 : React, Redux, Firebase(DB,Hosting,Auth), HTML, CSS, Javascript</p>
                             <p>설명 : 기존의 캠퍼스픽에서의 스터디게시판의 불편한 점을 개선하기 위해 나만의
                                 방식으로 만들어본 IT스터디 구인 게시판입니다. 두루마리형태의 재미와 나의 페이지,
