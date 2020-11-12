@@ -579,10 +579,8 @@ function Main() {
                             <h2>IT스터디 게시판 웹앱</h2>
                             <p>나의 역할 : 개인프로젝트(진행중)</p>
                             <p>사용 기술 : React, Redux, Firebase(DB,Hosting,Auth), HTML, CSS, Javascript</p>
-                            <p>설명 : 기존의 캠퍼스픽에서의 스터디게시판의 불편한 점을 개선하기 위해 나만의
-                                방식으로 만들어본 IT스터디 구인 게시판입니다. 두루마리형태의 재미와 나의 페이지,
-                                스크랩 기능들을 더하여 만들어보았습니다. 모바일에서도 즐길 수 있습니다.
-                            </p>
+                            <p>기능 : 글보기, 글쓰기, 스크랩, 댓글(수정,삭제), 나의 페이지, 포지션&지역 별 글보기</p>
+                            <p>설명 : 기존의 딱딱한 틀을 벗어난 새로운 형태의 게시판을 만들어 보았습니다.</p>
                             <p className="Atag_line">
                             <a href="https://studysitefb.firebaseapp.com/" target="blank" className="Atag">체험하기</a>
                             </p>
