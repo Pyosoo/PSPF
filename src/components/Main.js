@@ -11,7 +11,7 @@ const pj1Arr = ['pj1-0', 'pj1-1', 'pj1-2', 'pj1-3', 'pj1-4', 'pj1-5'];
 const pj2Arr = ['PJ2-1', 'PJ2-2', 'PJ2-3'];
 const pj3Arr = ['PJ3-1', 'PJ3-2', 'PJ3-3', 'PJ3-4', 'PJ3-5', 'PJ3-6'];
 const pj4Arr = ['PJ4-1', 'PJ4-2', 'PJ4-3', 'PJ4-4'];
-const pj6Arr = ['PJ6-0', 'PJ6-1', 'PJ6-2', 'PJ6-3', 'PJ6-4', 'PJ6-5']
+const pj6Arr = ['PJ6-1', 'PJ6-2', 'PJ6-3', 'PJ6-4', 'PJ6-5']
 
 // =========== 프로젝트 클릭시 관련 MODAL 창 ==================
 const useStyles = makeStyles((theme) => ({
@@ -24,7 +24,7 @@ const useStyles = makeStyles((theme) => ({
         display: 'flex',
         justifyContent : 'center',
         backgroundColor: 'rgb(179, 178, 178)',
-        borderRadius: '20px 20px 20px 20px',
+        borderRadius: '5px 5px 5px 5px',
         color: 'white',
         boxShadow: theme.shadows[5],
         padding: theme.spacing(2, 4, 3),
@@ -203,14 +203,14 @@ function Main() {
     };
     const minusIndex6 = () => {
         if (imgidx6 <= 0) {
-            setImgidx6(3);
+            setImgidx6(4);
         } else {
             setImgidx4(imgidx6 - 1);
         }
     }
 
     const plusIndex6 = () => {
-        if (imgidx6 >= 5) {
+        if (imgidx6 >= 4) {
             setImgidx6(0);
         } else {
             setImgidx6(imgidx6 + 1);
@@ -282,7 +282,7 @@ function Main() {
                                     C++
                                 </div>
                                 <div className="content_hover">
-                                    80%
+                                    70%
                                 </div>
                             </div>
                             <div className="square square3">
@@ -293,7 +293,7 @@ function Main() {
                                     Java
                                 </div>
                                 <div className="content_hover">
-                                    60%
+                                    50%
                                 </div>
                             </div>
                             <div className="square square4">
@@ -418,7 +418,7 @@ function Main() {
                            
 
                         <div className="Modal_textContainer Mt1">
-                            <h2> 반응형 구구단 학습 웹앱</h2>
+                            <h3> 반응형 구구단 학습 웹앱</h3>
                             <p>팀원 수 : 2명(기획디자인, 프론트엔드)</p>
                             <p>나의 역할 : 프론트엔드 전체</p>
                             <p>협업 도구 : Figma</p>
@@ -457,7 +457,7 @@ function Main() {
                         <button className="ImgControlBtn rightBtn" onClick={plusIndex2}>▷</button>
 
                         <div className="Modal_textContainer">
-                            <h2>농구기록지 App</h2>
+                            <h3>농구기록지 App</h3>
                             <p>나의 역할 : 개인프로젝트</p>
                             <p>사용 기술 : Java, AndroidStudio, Firebase</p>
                             <p>설명 : 농구 기록지의 불편함을 해결하기 위해 만들어본 APP으로, 농구 기록지 작성, 기록지 검색, 기록별 랭킹 검색 기능이 있어
