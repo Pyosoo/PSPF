@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "964713e51685234dace876a500c99d1c",
+    "revision": "802d77d1716f9a075c1ae09a67d025c2",
     "url": "/pspf/index.html"
   },
   {
-    "revision": "956b779d45b51b0a6664",
-    "url": "/pspf/static/css/main.6f77e77e.chunk.css"
+    "revision": "6d5662b381f6edcafbe6",
+    "url": "/pspf/static/css/main.a18551f5.chunk.css"
   },
   {
     "revision": "85449a50790f78725da8",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/pspf/static/js/2.1e65334f.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "956b779d45b51b0a6664",
+    "revision": "6d5662b381f6edcafbe6",
     "url": "/pspf/static/js/main.a7df4e1b.chunk.js"
   },
   {
@@ -128,8 +128,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/pspf/static/media/PJ6-5.95d9e55a.PNG"
   },
   {
-    "revision": "1946fb9466cef4b8a57f6dd0a0635ff1",
-    "url": "/pspf/static/media/PJ6_monitor.1946fb94.png"
+    "revision": "71775e96814c4d37bc6fc23c99e85716",
+    "url": "/pspf/static/media/PJ6_monitor.71775e96.png"
   },
   {
     "revision": "47bcc80ec906e9df84fd298f62d8c59d",
