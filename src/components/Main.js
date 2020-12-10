@@ -534,7 +534,7 @@ function Main() {
                         <button className="ImgControlBtn rightBtn" onClick={plusIndex4}>▷</button>
 
                         <div className="Modal_textContainer Mt4">
-                            <h3>내 주위 공사중 지하철역</h3>
+                            <h3>내 주위 공사중 지하철역(리뉴얼중)</h3>
                             <p>팀원 수 : 백엔드 1명 포함 2인</p>
                             <p>나의 역할 : 프론트엔드 </p>
                             <p>사용 기술 : 프론트 : Javascript, HTML, CSS, React.js Redux Navermap API<br/>
@@ -542,6 +542,7 @@ function Main() {
                             </p>
                             <p>설명 : 현재 지하철역의 승강 시설의 공사중 유무 데이터를 크롤링하여 사용자들에게 쉽게 알 수 있는 사이트를 제공해주고자
                                 만들게 되었습니다. 시작 시 위치허용을 통해 자기 중심의 지도로 시작하며, 사이드바 이동을 통해 지하철의 정보, 도착예정시간을 확인할 수 있습니다.
+                                현재 공모전을 계기로 새로운 기능과 디자인을 통해 리뉴얼 중인 프로젝트입니다.
                             </p>
                             <p className="Atag_line">
                                 <a href="https://pyosoo.github.io/under_construction/" target="blank" className="Atag">체험하기</a>
