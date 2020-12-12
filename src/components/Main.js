@@ -534,19 +534,19 @@ function Main() {
                         <button className="ImgControlBtn rightBtn" onClick={plusIndex4}>▷</button>
 
                         <div className="Modal_textContainer Mt4">
-                            <h3>내 주위 공사중 지하철역(리뉴얼중)</h3>
-                            <p>팀원 수 : 백엔드 1명 포함 2인</p>
-                            <p>나의 역할 : 프론트엔드 </p>
-                            <p>사용 기술 : 프론트 : Javascript, HTML, CSS, React.js Redux Navermap API<br/>
+                            <h3>내 주위 공사중 지하철역(공모전참여)</h3>
+                            <p>팀원 수 : (프론트2, 백1)</p>
+                            <p>나의 역할 : 차트를 제외한 프론트엔드 전체 개발 </p>
+                            <p>사용 기술 : 프론트 : Javascript, HTML, CSS, React.js React Navermap API, highcharts<br/>
                                         백엔드 : Python, Django, DRF, SQLite, PythonAnywhere
                             </p>
-                            <p>설명 : 현재 지하철역의 승강 시설의 공사중 유무 데이터를 크롤링하여 사용자들에게 쉽게 알 수 있는 사이트를 제공해주고자
-                                만들게 되었습니다. 시작 시 위치허용을 통해 자기 중심의 지도로 시작하며, 사이드바 이동을 통해 지하철의 정보, 도착예정시간을 확인할 수 있습니다.
-                                현재 공모전을 계기로 새로운 기능과 디자인을 통해 리뉴얼 중인 프로젝트입니다.
+                            <p>설명 : 장애인들의 불편함을 가중 시키는 것은 편의 정보에 대한 부족이라 생각되어, 장애인 스포츠 수강권으로 등록 가능한
+                                시설과 주변 편의시설을 볼 수 있고, 근처 지하철 역들의 승강 설비 현황을 파악하여 불편함을 최소화 할 수 있는 서비스입니다.
+                                (2차 체육종합 데이터 활용 경진대회 참여)
                             </p>
                             <p className="Atag_line">
-                                <a href="https://pyosoo.github.io/under_construction/" target="blank" className="Atag">체험하기</a>
-                                <a href="https://github.com/Pyosoo/under_construction" target="blank" className="Atag">GitHub<GithubOutlined /></a>
+                                <a href="https://pyosoo.github.io/FacMap/" target="blank" className="Atag">체험하기</a>
+                                <a href="https://github.com/Pyosoo/FacMap" target="blank" className="Atag">GitHub<GithubOutlined /></a>
                             </p>
                             <button className="button2 btn2" onClick={handleClose4}>Close</button>
                         </div>
