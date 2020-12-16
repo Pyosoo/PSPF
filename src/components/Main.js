@@ -537,7 +537,7 @@ function Main() {
                             <h3>내 주위 공사중 지하철역(공모전참여)</h3>
                             <p>팀원 수 : (프론트2, 백1)</p>
                             <p>나의 역할 : 차트를 제외한 프론트엔드 전체 개발 </p>
-                            <p>사용 기술 : 프론트 : Javascript, HTML, CSS, React.js React Navermap API, highcharts<br/>
+                            <p>사용 기술 : 프론트 : Javascript, HTML, CSS, React.js, Rocoil, React Navermap API, highcharts<br/>
                                         백엔드 : Python, Django, DRF, SQLite, PythonAnywhere
                             </p>
                             <p>설명 : 장애인들의 불편함을 가중 시키는 것은 편의 정보에 대한 부족이라 생각되어, 장애인 스포츠 수강권으로 등록 가능한
