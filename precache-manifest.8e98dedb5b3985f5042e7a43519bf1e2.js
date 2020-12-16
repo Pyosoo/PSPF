@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7be20690455192de635aead3dc7068e0",
+    "revision": "fd607ae0019e628bc98794412117dab4",
     "url": "/pspf/index.html"
   },
   {
-    "revision": "3597e99cac16aba31308",
+    "revision": "e2e9dc72e467b4fa59fe",
     "url": "/pspf/static/css/main.1682205b.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/pspf/static/js/2.45e76402.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "3597e99cac16aba31308",
-    "url": "/pspf/static/js/main.566f5241.chunk.js"
+    "revision": "e2e9dc72e467b4fa59fe",
+    "url": "/pspf/static/js/main.faf5ff20.chunk.js"
   },
   {
     "revision": "34030029f0a1be1c06db",
